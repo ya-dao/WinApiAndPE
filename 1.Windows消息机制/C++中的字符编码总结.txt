@@ -1,0 +1,18 @@
+参考自:https://www.cnblogs.com/gaohongchen01/p/4006700.html
+1. VS中提供了两种文件字符编码:多字节字符集和Unicode字符集.类似于Java IDE中的设置选择,这两种编码区别如下:
+	多字节字符集:	
+		其实就是ANSI编码,多字节字符集是专业名称,在简单中文的环境下就对应的是GBK.在程序代码中的常量字符串和char类型字符都是ANSI编码的.
+	Unicode字符集:
+		在VS中,所有字符相关的默认都是ANSI编码,但是最好是使用Unicode编码,便于跨平台和国际化,且有利于程序性能.
+		为了让编译器识别Unicode字符串，必须在前面加一个“L”(在C++中可以使用宏定义如:_T()或者_TEXT()),
+		例如: wchar_t *szTest=L"This is a Unicode string.";
+		如果需要使用字符串处理函数,wchar_t 可用字符串处理函数：wcscat(),wcscpy(),wcslen()等以wcs打头的函数。
+		
+
+2. 大部分的API都有一个默认的方法名以及A和W两个版本,如:
+		FindWindow,FindWindowA,FindWindowW
+	区别如下:
+		FindWindow:默认调用FindWindowW
+		FindWindowA:里面的字符编码要求为ANSI,对应到程序里面为LPCTSTR
+		FindWindowW:里面的字符编码要求为Unicode,对应到程序里面为LPCWSTR,可以用_T()或_TEXT()转换;
+					如果是字符数组,类似不能再用char类型了,应该使用wchar_t类型,
