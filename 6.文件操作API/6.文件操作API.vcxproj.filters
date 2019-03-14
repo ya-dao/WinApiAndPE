@@ -18,5 +18,8 @@
     <ClCompile Include="拷贝自身并创建新文件到所有盘符下.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5. 遍历当前目录所有文件.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

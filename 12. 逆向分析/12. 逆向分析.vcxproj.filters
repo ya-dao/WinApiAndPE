@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2.远程代码注入.c">
+    <ClCompile Include="2. 扫雷外挂.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3. 看雪找的源代码.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

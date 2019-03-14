@@ -4,6 +4,9 @@
 #include<stdlib.h>
 #include<TlHelp32.h>
 /*
+	坑:
+		在64和32位切换的情况下,类型慎用DWORD,它的长度固定为4个字节,不会根据程序位数的变化而变化.
+		尽量使用函数原始的返回类型,即SIZE_T,FARPROC这种会自动变化的类型.
 	远程线程:进程A在进程B中创建一个线程
 	一. DLL的代码注入原理
 		该注入和卸载的过程其实就是让远程线程执行一次LoadLibrary和FreeLibrary函数.

@@ -32,6 +32,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11.远程线程编程", "11
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11.1.被注入的DLL程序", "11.1.被注入的DLL程序\11.1.被注入的DLL程序.vcxproj", "{B3DF53F3-FC0E-4BC5-8C04-69071892FDF4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12. 逆向分析", "12. 逆向分析\12. 逆向分析.vcxproj", "{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13. PE文件格式", "13. PE文件格式\13. PE文件格式.vcxproj", "{03DD6194-1000-4F16-AC62-AC48E7C7EB91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -136,6 +140,22 @@ Global
 		{B3DF53F3-FC0E-4BC5-8C04-69071892FDF4}.Release|x64.Build.0 = Release|x64
 		{B3DF53F3-FC0E-4BC5-8C04-69071892FDF4}.Release|x86.ActiveCfg = Release|Win32
 		{B3DF53F3-FC0E-4BC5-8C04-69071892FDF4}.Release|x86.Build.0 = Release|Win32
+		{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}.Debug|x64.ActiveCfg = Debug|x64
+		{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}.Debug|x64.Build.0 = Debug|x64
+		{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}.Debug|x86.ActiveCfg = Debug|Win32
+		{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}.Debug|x86.Build.0 = Debug|Win32
+		{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}.Release|x64.ActiveCfg = Release|x64
+		{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}.Release|x64.Build.0 = Release|x64
+		{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}.Release|x86.ActiveCfg = Release|Win32
+		{E568F510-795B-4F4D-95C2-D9EC1B3A6D44}.Release|x86.Build.0 = Release|Win32
+		{03DD6194-1000-4F16-AC62-AC48E7C7EB91}.Debug|x64.ActiveCfg = Debug|x64
+		{03DD6194-1000-4F16-AC62-AC48E7C7EB91}.Debug|x64.Build.0 = Debug|x64
+		{03DD6194-1000-4F16-AC62-AC48E7C7EB91}.Debug|x86.ActiveCfg = Debug|Win32
+		{03DD6194-1000-4F16-AC62-AC48E7C7EB91}.Debug|x86.Build.0 = Debug|Win32
+		{03DD6194-1000-4F16-AC62-AC48E7C7EB91}.Release|x64.ActiveCfg = Release|x64
+		{03DD6194-1000-4F16-AC62-AC48E7C7EB91}.Release|x64.Build.0 = Release|x64
+		{03DD6194-1000-4F16-AC62-AC48E7C7EB91}.Release|x86.ActiveCfg = Release|Win32
+		{03DD6194-1000-4F16-AC62-AC48E7C7EB91}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
